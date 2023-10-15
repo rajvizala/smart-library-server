@@ -36,7 +36,7 @@ class Book(models.Model):
     copies = models.IntegerField()
     location = models.CharField(max_length=20)
     img_url = models.URLField()  # images stored in aws s3
-    file = models.FileField(null=True,blank=True)
+    file = models.FileField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     
 
