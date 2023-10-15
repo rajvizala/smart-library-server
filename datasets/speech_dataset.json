@@ -5,27 +5,27 @@
       "data": [
         {
           "synonyms": [],
-          "value": "JK Rowlings"
+          "value": "jk rowlings"
         },
         {
           "synonyms": [],
-          "value": "Sandra Brown"
+          "value": "sandra brown"
         },
         {
           "synonyms": [],
-          "value": "Tom Clancy"
+          "value": "tom clancy"
         },
         {
           "synonyms": [],
-          "value": "Margaret Yorke"
+          "value": "margaret yorke"
         },
         {
           "synonyms": [],
-          "value": "Sara Paretsky"
+          "value": "sara paretsky"
         },
         {
           "synonyms": [],
-          "value": "Dan Brown"
+          "value": "dan brown"
         }
       ],
       "matching_strictness": 1.0,
@@ -36,39 +36,39 @@
       "data": [
         {
           "synonyms": [],
-          "value": "Harry Potter and The Philosopher's Stone"
+          "value": "harry potter and the philosopher's stone"
         },
         {
           "synonyms": [],
-          "value": "The Secret Life of Bees"
+          "value": "The secret life of bees"
         },
         {
           "synonyms": [],
-          "value": "M for Malice"
+          "value": "m for malice"
         },
         {
           "synonyms": [],
-          "value": "Bridget Jones's Diary"
+          "value": "bridget jones's diary"
         },
         {
           "synonyms": [],
-          "value": "A Darkness More Than Night"
+          "value": "a darkness more than night"
         },
         {
           "synonyms": [],
-          "value": "All Creatures Great and Small"
+          "value": "all creatures great and small"
         },
         {
           "synonyms": [],
-          "value": "Harry Potter and The Prisoner of Azkaban"
+          "value": "harry potter and the prisoner of azkaban"
         },
         {
           "synonyms": [],
-          "value": "Roses are Red"
+          "value": "roses are red"
         },
         {
           "synonyms": [],
-          "value": "Hunger Games"
+          "value": "hunger games"
         }
       ],
       "matching_strictness": 1.0,
@@ -132,7 +132,7 @@
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Bridget Jones's Diary"
+              "text": "bridget jones's diary"
             }
           ]
         },
@@ -144,7 +144,7 @@
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Hunger Games"
+              "text": "hunger games"
             }
           ]
         },
@@ -156,7 +156,7 @@
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "A Darkness More Than Night"
+              "text": "a darkness more than night"
             }
           ]
         },
@@ -168,7 +168,7 @@
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Harry Potter and The Philosopher's Stone"
+              "text": "harry potter and the philosopher's stone"
             }
           ]
         },
@@ -180,7 +180,7 @@
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "M for Malice"
+              "text": "m for malice"
             },
             {
               "text": " located"
@@ -190,24 +190,24 @@
         {
           "data": [
             {
-              "text": "I want to know where is "
+              "text": "i want to know where is "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "The Secret Life of Bees"
+              "text": "the secret life of bees"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "I am looking for "
+              "text": "i am looking for "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "All Creatures Great and Small"
+              "text": "all creatures great and small"
             }
           ]
         }
@@ -218,24 +218,24 @@
         {
           "data": [
             {
-              "text": "Can you suggest a book by "
+              "text": "can you suggest a book by "
             },
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "JK Rowlings"
+              "text": "jk rowlings"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "What are some books by "
+              "text": "what are some books by "
             },
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "Sandra Brown"
+              "text": "sandra brown"
             },
             {
               "text": " that you'd suggest"
@@ -245,12 +245,12 @@
         {
           "data": [
             {
-              "text": "Which "
+              "text": "which "
             },
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "Margaret Yorke"
+              "text": "margaret yorke"
             },
             {
               "text": "'s book do you think I should read"
@@ -260,12 +260,12 @@
         {
           "data": [
             {
-              "text": "Could you suggest a book that written by "
+              "text": "could you suggest a book that written by "
             },
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "Sara Paretsky"
+              "text": "sara paretsky"
             }
           ]
         },
@@ -277,19 +277,19 @@
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "Dan Brown"
+              "text": "dan brown"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "What are "
+              "text": "what are "
             },
             {
               "entity": "author",
               "slot_name": "author",
-              "text": "Sandra Brown"
+              "text": "sandra brown"
             },
             {
               "text": "'s most popular books you recommend"
@@ -303,7 +303,7 @@
         {
           "data": [
             {
-              "text": "Suggest me a good "
+              "text": "suggest me a good "
             },
             {
               "entity": "genre",
@@ -318,7 +318,7 @@
         {
           "data": [
             {
-              "text": "I am looking for some "
+              "text": "i am looking for some "
             },
             {
               "entity": "genre",
@@ -333,7 +333,7 @@
         {
           "data": [
             {
-              "text": "I am in mood for a "
+              "text": "i am in mood for a "
             },
             {
               "entity": "genre",
@@ -348,7 +348,7 @@
         {
           "data": [
             {
-              "text": "Can you recommend some "
+              "text": "can you recommend some "
             },
             {
               "entity": "genre",
@@ -363,7 +363,7 @@
         {
           "data": [
             {
-              "text": "I want to read a "
+              "text": "i want to read an "
             },
             {
               "entity": "genre",
@@ -378,7 +378,7 @@
         {
           "data": [
             {
-              "text": "Can you suggest me some "
+              "text": "can you suggest me some "
             },
             {
               "entity": "genre",
@@ -397,84 +397,84 @@
         {
           "data": [
             {
-              "text": "Can you summarize "
+              "text": "can you summarize "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "A Darkness More Than Night"
+              "text": "a darkness more than night"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "What's the summary of "
+              "text": "what's the summary of "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "M for Malice"
+              "text": "m for malice"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "What can you tell me about "
+              "text": "what can you tell me about "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "The Secret Life of Bees"
+              "text": "the secret life of bees"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "Can you tell me the plot of "
+              "text": "can you tell me the plot of "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "All Creatures Great and Small"
+              "text": "all creatures great and small"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "Tell me about the "
+              "text": "tell me about the "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Bridget Jones's Diary"
+              "text": "bridget jones's diary"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "Can you give me an overview of the "
+              "text": "can you give me an overview of the "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Harry Potter and The Prisoner of Azkaban"
+              "text": "harry potter and the prisoner of azkaban"
             }
           ]
         },
         {
           "data": [
             {
-              "text": "I want to know about "
+              "text": "i want to know about "
             },
             {
               "entity": "book",
               "slot_name": "book",
-              "text": "Roses are Red"
+              "text": "roses are red"
             }
           ]
         }
