@@ -3,7 +3,7 @@ from .models import *
 
 
 class NotesSerializer(serializers.ModelSerializer):
-    last_edited = serializers.DateTimeField(format="%d/%m/%Y %H:%M:%S")
+    last_edited = serializers.DateTimeField(format="%d/%m/%Y %H:%M:%S",read_only=True)
     class Meta:
 
         model = Notes
