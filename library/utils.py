@@ -22,19 +22,19 @@ def query_slot_not_found(slot_name):
 def query_search_book(data: dict):
     if data['result']:
         print("DATA",data['result'])
-        if data['result'][0]['copies']:
+        if data['result']['copies']:
             print("BOOK FOUNDD.....")
             return speech.resolve(
                 'BOOK_FOUND',
-                book_name=data['result'][0]['title'],
-                shelf=data['result'][0]['location'],
+                book_name=data['result']['title'],
+                shelf=data['result']['location'],
                 section= None
             )
         else:
             print("BOKK NOT FOUND..")
             return speech.resolve(
                 'BOOK_NOT_AVAILABLE',
-                book_name=data['result'][0]['title'],
+                book_name=data['result']['title'],
             )
     else:
         print("BOKK NOT FOUND..")
