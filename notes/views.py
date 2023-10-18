@@ -1,5 +1,5 @@
 
-from tkinter import N
+
 from urllib import request
 from django.http import JsonResponse
 from django.shortcuts import render
