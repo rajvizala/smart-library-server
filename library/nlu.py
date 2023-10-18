@@ -63,9 +63,9 @@ class NLUEngine():
     def search_book(self,book_name):
         #Write all functions here.
         print("Book Name",book_name)
-        book = Book.objects.filter(title= 'Vanished')
+        book = Book.objects.filter(title__search= book_name)
         print("Books",book)
-        book_serialize = BookSerializer(book,many=True)
+        book_serialize = BookSerializer(book, many = True)
         print("Result:",book_serialize)
         return book_serialize.data
 
