@@ -1,7 +1,7 @@
 from ast import parse
 from snips_nlu import SnipsNLUEngine
 # from db import LibraryDatabase
-from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity
+from django.contrib.postgres.search import SearchVector, SearchQuery,  TrigramSimilarity
 from django.db.models.functions import Cast
 from enum import Enum
 from .models import *
@@ -63,24 +63,34 @@ class NLUEngine():
     def search_book(self,book_name):
         #Write all functions here.
         print("Book Name",book_name)
-        book = Book.objects.filter(title__search= book_name).first()
-        print("Books",book)
+        # book = Book.objects.filter(title__search= book_name).first()
+        value = "{0}:*"
+        search_vector = SearchVector("title")
+        book = Book.objects.annotate(search=search_vector).filter(search=SearchQuery(value.format(" | ".join(book_name.split())), search_type="raw")).first()
+       
+        # record =  Book.objects.annotate(similarity=TrigramSimilarity('title', book_name)).filter(similarity__gt=0.1).order_by("-similarity")
+        # print("RECORD:",record)
+        # print("Books",book)
         if book:
             book_serialize = BookSerializer(book)
             print("Result:",book_serialize)
+            
             return book_serialize.data
         else: return None
 
     def search_books_by_author(self, author_name, count=10):
      
        books_by_author = Book.objects.filter(author__name__search=author_name) # This is full text search, but it won't account for spelling mistakes
-       book_serialize = BookSerializer(books_by_author,many=True)
+       record =  Book.objects.annotate(similarity=TrigramSimilarity('author__name', author_name)).filter(similarity__gt=0.4).order_by("-similarity")
+       print("RECORD OF AUTHOR",record) 
+       #    book_serialize = BookSerializer(books_by_author,many=True)
+       book_serialize  = BookSerializer(record,many = True)
        print("Result:",book_serialize)
        return book_serialize.data
         
 
     def search_books_by_genre(self, genre, count=10):
-      
+        
         books_by_genre = Book.objects.filter(category__category__search=genre)
         book_serialize = BookSerializer(books_by_genre,many=True)
         print("Result:",book_serialize)
