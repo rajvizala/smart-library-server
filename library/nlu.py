@@ -84,18 +84,23 @@ class NLUEngine():
        record =  Book.objects.annotate(similarity=TrigramSimilarity('author__name', author_name)).filter(similarity__gt=0.4).order_by("-similarity")
        print("RECORD OF AUTHOR",record) 
        #    book_serialize = BookSerializer(books_by_author,many=True)
-       book_serialize  = BookSerializer(record,many = True)
-       print("Result:",book_serialize)
-       return book_serialize.data
+       if record:
+        book_serialize  = BookSerializer(record,many = True)
+        print("Result:",book_serialize)
         
+        return book_serialize.data
+       else:
+           return None
+            
 
     def search_books_by_genre(self, genre, count=10):
         
         books_by_genre = Book.objects.filter(category__category__search=genre)
-        book_serialize = BookSerializer(books_by_genre,many=True)
-        print("Result:",book_serialize)
-        return book_serialize.data
-        
+        if books_by_genre:
+            book_serialize = BookSerializer(books_by_genre,many=True)
+            print("Result:",book_serialize)
+            return book_serialize.data
+        else: return None
 
 
 
